@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, main, footer {
+            padding: 20px;
+            text-align: center;
+        }
+        header {
+            background-color: #f8f9fa;
+        }
+        footer {
+            background-color: #f1f1f1;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        input, textarea {
+            margin: 10px 0;
+            padding: 10px;
+            width: 80%;
+        }
+        ul, ol {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ласкаво просимо на сайт перукарні</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Наші послуги</h2>
+            <img src="pari.png" alt="Наші послуги">
+        </section>
+        <section>
+            <h2>Таблиця з інформацією</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Назва</th>
+                        <th>Опис</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Послуга 1</td>
+                        <td>Стрижка</td>
+                    </tr>
+                    <tr>
+                        <td>Послуга 2</td>
+                        <td>Стрижка + борода</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2>Наші продукти</h2>
+            <ul>
+                <li>Шампунь</li>
+                <li>Гель</li>
+                <li>Бритва</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Контактна форма</h2>
+            <form action="submit_form.html" method="post">
+                <input type="text" name="name" placeholder="Ваше ім'я" required>
+                <input type="email" name="email" placeholder="Ваш email" required>
+                <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+        <section>
+            <h2>Додаткова інформація</h2>
+            <p>Виконав Моляков Михайло ІМ-13</p>
+            <a href="#">Дізнатися більше про нас</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Мій сайт. Всі права захищено.</p>
+    </footer>
+</body>
+</html>
